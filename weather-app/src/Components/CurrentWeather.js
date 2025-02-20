@@ -17,7 +17,7 @@ export function CurrentWeather({ curWeather }) {
             <h3>
               {curWeather.name}, {curWeather.sys.country}
             </h3>
-            <p>{curWeather.main.temp}°C</p>
+            <p>{curWeather.main.temp.toFixed(1)}°C</p>
           </div>
         </div>
       ) : (
