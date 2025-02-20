@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Header } from "./Header";
 import { CurrentWeather } from "./CurrentWeather";
-import { ForecastWeather } from "./ForecastWeather";
+import { ForecastWeatherList } from "./ForecastWeatherList";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -33,7 +33,7 @@ export default function App() {
       <div className="App">
         <Header onSetSearch={setSearch} onSearch={handleSearch} />
         <CurrentWeather curWeather={curWeather} />
-        <ForecastWeather forWeather={forWeather} />
+        <ForecastWeatherList forWeather={forWeather} />
       </div>
     </>
   );
