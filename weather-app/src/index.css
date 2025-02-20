@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #181721;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+header {
+  background-color: #1e1e2f;
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header > div > input {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.search-button {
+  background-color: #2d2d44;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-button:hover {
+  background-color: #454568;
+}
+.search-icon {
+  color: #fff;
+  width: 40px;
+  height: 40px;
 }
