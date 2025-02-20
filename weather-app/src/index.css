@@ -59,3 +59,15 @@ header > div > input {
   width: 40px;
   height: 40px;
 }
+.current-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather-icon {
+  width: 200px;
+  height: 200px;
+}
