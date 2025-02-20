@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { Header } from "./Header";
+import { CurrentWeather } from "./CurrentWeather";
+import { ForecastWeather } from "./ForecastWeather";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -26,39 +29,12 @@ export default function App() {
   }
 
   return (
-    <div className="App">
-      <header>
-        <h1>Weather App</h1>
-        <div>
-          <input
-            type="text"
-            placeholder="Enter your location..."
-            onChange={(e) => setSearch(e.target.value)}
-          />
-          <button onClick={handleSearch}>Search</button>
-        </div>
-
-        {typeof curWeather.main != "undefined" ? (
-          <div>
-            <p>
-              {curWeather.name}, {curWeather.sys.country}
-            </p>
-
-            <p>{curWeather.main.temp}°C</p>
-
-            <p>{curWeather.weather[0].main}</p>
-          </div>
-        ) : (
-          ""
-        )}
-        {typeof forWeather != "undefined" ? (
-          <div>
-            <span></span>
-          </div>
-        ) : (
-          ""
-        )}
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Header onSetSearch={setSearch} onSearch={handleSearch} />
+        <CurrentWeather curWeather={curWeather} />
+        <ForecastWeather forWeather={forWeather} />
+      </div>
+    </>
   );
 }
