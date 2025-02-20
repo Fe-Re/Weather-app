@@ -22,7 +22,7 @@ h1 {
   align-items: center;
   height: 100vh;
 }
-header > div > input {
+header > form > input {
   height: 2rem;
   width: 15rem;
   border-radius: 30px;

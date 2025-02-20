@@ -4,14 +4,20 @@ export function Header({ onSetSearch, onSearch }) {
   return (
     <header>
       <h1>Weather App</h1>
-      <div className="search-box">
+      <form
+        className="search-box"
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSearch();
+        }}
+      >
         <input
           type="text"
           placeholder="Enter your location..."
           onChange={(e) => onSetSearch(e.target.value)}
         />
         <SearchButton onSearch={onSearch} />
-      </div>
+      </form>
     </header>
   );
 }
