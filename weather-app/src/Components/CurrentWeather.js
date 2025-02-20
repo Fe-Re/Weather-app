@@ -2,7 +2,7 @@ export function CurrentWeather({ curWeather }) {
   return (
     <>
       {typeof curWeather.main != "undefined" ? (
-        <div>
+        <div className="current-container">
           <p>
             {curWeather.name}, {curWeather.sys.country}
           </p>

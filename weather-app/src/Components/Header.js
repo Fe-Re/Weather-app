@@ -1,3 +1,5 @@
+import SearchButton from "./SearchButton";
+
 export function Header({ onSetSearch, onSearch }) {
   return (
     <header>
@@ -8,7 +10,7 @@ export function Header({ onSetSearch, onSearch }) {
           placeholder="Enter your location..."
           onChange={(e) => onSetSearch(e.target.value)}
         />
-        <button onClick={onSearch}>Search</button>
+        <SearchButton onSearch={onSearch} />
       </div>
     </header>
   );

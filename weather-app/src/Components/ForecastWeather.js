@@ -2,7 +2,7 @@ export function ForecastWeather({ forWeather }) {
   return (
     <>
       {typeof forWeather != "undefined" ? (
-        <div>
+        <div className="forecast-container">
           <span></span>
         </div>
       ) : (
