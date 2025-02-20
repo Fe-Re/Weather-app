@@ -3,12 +3,13 @@
 body {
   background-color: #181721;
   font-family: "Poppins", sans-serif;
+
   margin: 0;
   padding: 0;
   color: #fff;
 }
 header {
-  background-color: #1e1e2f;
+  background-color: #2d2d44;
   padding: 1rem;
   text-align: center;
 }

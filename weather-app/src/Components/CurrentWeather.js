@@ -15,7 +15,7 @@ const weatherIcons = {
 export function CurrentWeather({ curWeather }) {
   if (!curWeather.main) return null;
   const weatherCondition = curWeather.weather[0].main;
-  const weatherIcon = weatherIcons[weatherCondition] || clearIcon;
+  const weatherIcon = `https://openweathermap.org/img/wn/${curWeather.weather[0].icon}@2x.png`;
 
   return (
     <>
