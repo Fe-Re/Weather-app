@@ -16,12 +16,6 @@ h1 {
   margin: 0;
   font-size: 4rem;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 header > form > input {
   height: 2rem;
   width: 15rem;
@@ -66,8 +60,33 @@ header > form > input {
   align-items: center;
   flex-direction: column;
 }
-
 .weather-icon {
   width: 200px;
   height: 200px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  width: 300px;
+  background-color: #2d2d44;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.current-weather h2 {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+.current-weather h3 {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.current-weather p {
+  margin: 20px;
+  font-size: 1rem;
 }
